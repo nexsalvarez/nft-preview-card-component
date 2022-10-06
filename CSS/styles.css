@@ -1,0 +1,48 @@
+:root {
+    --main-dark-blue: hsl(217, 54%, 11%);
+    --card-dark-blue: hsl(216, 50%, 16%);
+    --line-dark-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --md: 1.8rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+}
+main {
+    width: 100vw;
+    height: 95vh;
+}
+
+/*Styles Card*/
+
+.nft-main-container {
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    padding: 0 20px;
+    background-color: var(--main-dark-blue);
+}
+.nft-card-container {
+    max-width: 360px;
+    height: auto;
+    padding: 24px;
+    background-color: var(--card-dark-blue);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, 
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, 
+    rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 16px;
+}
+
+.nft-card-container .card--image {
+    width: 100%;
+    border-radius: 8px;
+}
