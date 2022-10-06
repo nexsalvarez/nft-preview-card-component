@@ -1,4 +1,6 @@
 :root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
     --main-dark-blue: hsl(217, 54%, 11%);
     --card-dark-blue: hsl(216, 50%, 16%);
     --line-dark-blue: hsl(215, 32%, 27%);
@@ -45,4 +47,59 @@ main {
 .nft-card-container .card--image {
     width: 100%;
     border-radius: 8px;
+}
+.nft-card-container h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: var(--white);
+    margin-top: 20px;
+}
+.nft-card-container .p-description {
+    font-size: var(--md);
+    font-weight: 300;
+    line-height: 1.8rem;
+    color: var(--soft-blue);
+    margin-top: 20px;
+}
+.nft-card-container .card--promo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card--promo .currency,
+.promo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 20px 0;
+}
+.card--promo .promo {
+    justify-content: end;
+}
+.card--promo .currency p {
+    font-size: var(--md);
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--cyan);
+}
+.card--promo .promo p {
+    font-size: var(--md);
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--soft-blue);
+}
+.nft-main-container .card--propietary {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.card--propietary img {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
 }
